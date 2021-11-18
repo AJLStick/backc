@@ -1,12 +1,15 @@
 // AJLStick 2021.
 // don't even try it.
-var totalClicks = 0, coins = 10, earn = 1, earnCost = 150, autoEarn = 1, autoCost = 500, rank = "hobo";
+var totalClicks = 0, coins = 10, earn = 1, earnCost = 150, autoEarn = 1, autoCost = 500, rank = "hobo", cheats = 0;
+
+
 document.getElementById('coins').innerHTML = "<font color=orange><b>«C:</b></font>" + coins;
 document.getElementById('rank').innerHTML = "rank: " + rank;
 
 document.getElementById('coinsSec').innerHTML = "<font color=yellow><b>«C</b></font>" + autoEarn + "/sec";
 
 document.getElementById('coinsClick').innerHTML = "<font color=lime><b>«C</b></font>" + earn + "/click";
+
 function between(x, min, max) {
   return x >= min && x <= max;
 }
@@ -70,3 +73,5 @@ rank = "moderately wealthy";
 rank = "rich";
   } 
 }
+
+

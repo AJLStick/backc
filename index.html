@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html id="main">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>click</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+            <script src="commands.js"></script>
   <body>
     <blockouter>
           <div class="button4"></button>
@@ -28,14 +29,17 @@
   </div>
   <div id="buyAuto" class="button3" onclick="buyAutoFunc()">
   AUTO x 2 [500]
-  </div><div>  
+  </div><div>
+      <div id="sep"></div>
+    <div id="console">
+<input id="consoleTxt" placeholder="commands go here..">
+<button id="CMDButton" onclick="submitCMD()">--></button>
+<p id="output">(no output yet...)</p>    
+    </div>  
     </block>
-
-
-
-      
     </blockouter>
   </body>
-        <script src="script.js"></script>
-            <script src="auto.js"></script>
+
+     <script src="script.js"></script>
+
 </html>

@@ -1,13 +1,25 @@
-html, block, blockouter{
+html, block, blockouter, input, textarea, button{
 font-family:monospace, monospace;
 } 
 p{
 margin:0px;
 }
-#below{
-  position:relative;
-  background:gray;
+button{
+  /*
+  NOT TO BE CONFUSED WITH THE ".button"
+*/
 
+background:white; color:black; height:inherit; border:24px;
+}
+#console, #consoleTxt{
+  background:black;
+  color:white;
+  border:none;
+  height:inherit;
+  
+}
+textarea:focus, input:focus, #CMDButton, button{
+    outline: none;
 }
 html{
         user-select: none;
@@ -16,6 +28,7 @@ html{
         -webkit-user-select: none;
         -o-user-select: none;
 }
+#sep{border:10px solid silver; width:inherit}
 block {
   background:darkblue;
   color:white;
